@@ -7,35 +7,55 @@ export default {
 <template> 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    
+
+    <!-- Nome / Marca -->
+    <a class="navbar-brand">Portfólio - Alice P. da Silva</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <!-- Home -->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Card.vue">Home</a>
+          <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
         </li>
 
+        <!-- Contatos -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contatos</a>
+          <router-link class="nav-link" to="/contatos">Contatos</router-link>
         </li>
 
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Mais
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+            <!-- Currículo -->
+            <li>
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="curriculo.pdf" download>
+                📄 Currículo
+                <button class="btn btn-sm btn-outline-primary ms-2">Baixar</button>
+              </a>
+            </li>
+
+            <!-- Certificados -->
+            <li>
+              <router-link class="dropdown-item" to="/certificados">🎓 Certificados</router-link>
+            </li>
+
+            <!-- Blog / Artigos -->
+            <li>
+              <router-link class="dropdown-item" to="/blog">✍️ Blog / Artigos</router-link>
+            </li>
           </ul>
         </li>
       </ul>
-      <a class="navbar-brand">Portifólio - Alice P. da Silva</a>
     </div>
   </div>
 </nav>
 </template>
+
 
 <style scoped>
 

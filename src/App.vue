@@ -4,21 +4,19 @@ import Card from './components/Card.vue';
 import Rodape from './components/Rodape.vue';
 import Timeline from './components/Timeline.vue';
 import My from './components/My.vue';
+import router from './router/index.js';
 
 export default {
   name: 'App',
-  components: { NavBar, My, Timeline, Card, Rodape}
+  components: { router, NavBar, My, Timeline, Card, Rodape}
 }
 </script>
 
 <template>
   <div>
-
-    <NavBar />
-    <My />
-    <Timeline />
-    <Card />
-    <Rodape />
+  <NavBar />
+  <router-view />
+  <Rodape />
 
 
   </div>

@@ -22,7 +22,7 @@ export default {
         <!-- Card à direita -->
         <div class="sobre-mim-card">
         <div class="card">
-            <img src="@/assets/Alice.png" class="card-img-top" alt="Guardião">
+            <img src="@/assets/img/Alice.png" class="card-img-top" alt="Guardião">
             <div class="card-body">
             <h5 class="card-title">Essa sou eu (;-)</h5>
             <p class="card-text">
@@ -40,6 +40,84 @@ export default {
 </template>
 
 <style scoped>
+
+.progress {
+  background: #c0c0c0ff;
+  border-radius: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #00CFFF, #39FF14);
+  height: 100%;
+  max-width: 0; /* começa zerada */
+  animation: loadBar 1.8s ease-out forwards;
+}
+
+/* anima o max-width até o valor do width inline */
+@keyframes loadBar {
+  from { max-width: 0; }
+  to   { max-width: 100%; }
+}
+
+
+
+.card-img-top {
+  width: 250px;   /* largura menor */
+  height: auto;   /* mantém proporção */
+  display: block;
+  margin: 0 auto 15px auto; /* centraliza e dá espaçamento embaixo */
+  border-radius: 9px; /* opcional: cantos arredondados */
+}
+
+.card {
+  background: #ffffffff;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 12px rgba(0, 207, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #181717ff; /* texto branco por padrão */
+    margin: 20px auto;
+    
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 207, 255, 0.5);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: #00CFFF;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #00CFFF;
+}
+
+.card-content {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  background: linear-gradient(90deg, #00CFFF, #39FF14);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0d0d0d;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px #00CFFF;
+}
+
 /* Container em duas colunas */
 .sobre-mim-container {
   display: flex; /* usa flexbox para layout em linha */

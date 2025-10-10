@@ -5,41 +5,58 @@ export default {
 </script>
 
 <template> 
+    <!-- Cards de projetos -->
+    <h2 id="projetos" style="text-align: center; color: #00CFFF; text-shadow: 0 0 8px #00CFFF;">Meus Projetos</h2>
+    <p style="text-align: center; margin-bottom: 30px;">Aqui estão alguns dos meus projetos recentes, desenvolvidos com dedicação e criatividade.</p>
 
-/* Segunda Versão dos cards. com progresso (para mostrar meus projetos) */
-<br>
 <div class="card-group">
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="@/assets/img/Miauh.png" class="card-img-top" alt="Miauh Timer">
     <div class="card-body">
-      <h5 class="card-title">Card title - Miauh timer</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
- 
+      <h5 class="card-title">Miauh Timer 🐾</h5>
+     <p class="card-text">Aplicativo temático inspirado em gatos, desenvolvido para cálculo de diferença de tempo entre duas datas/horas. Traz uma experiência divertida e funcional, com identidade visual personalizada.</p>
+    
+     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+      <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+      <router-link class="card-btn" to="/miauh">Ver Mais</router-link>
+    </div>
+    
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar" style="width: 100%"></div>
-        </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização 3 mins ago</small></p>
     </div>
   </div>
+
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="@/assets/img/Aly.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title - Chat Aly </h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title">Chat Aly 🤖</h5>
+      <p class="card-text">Assistente virtual em forma de chat interativo, que combina mensagens, chamadas e até histórias interativas com escolhas do usuário. Um projeto que une comunicação e entretenimento de forma criativa.</p>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+  <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+  <router-link class="card-btn" to="/aly">Ver Mais</router-link>
+</div>
+
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 75%"></div>
+  <div class="progress-bar" style="width: 100%"></div>
 
 </div>
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="@/assets/img/Fluxo.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title - FluxoApp</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <h5 class="card-title">FluxoApp 🚀</h5>
+      <p class="card-text">Aplicativo de controle financeiro pessoal, com registro de gastos, gráficos dinâmicos, resumo de períodos e exportação em PDF. Focado em ajudar o usuário a equilibrar finanças de forma prática e visual.</p>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+  <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+  <router-link class="card-btn" to="/fluxo">Ver Mais</router-link>
+</div>
+
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 75%"></div>
+  <div class="progress-bar" style="width: 100%"></div>
 </div>
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
@@ -49,21 +66,30 @@ export default {
 <br>
 <div class="card-group">
   <div class="card">
-    <img src="@/assets/Guardiao.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/Guardiao.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title - Guardião de Senhas </h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <h5 class="card-title">Guardião de Senhas 🔐</h5>
+      <p class="card-text">Aplicativo focado em armazenamento seguro de senhas. Permite organizar credenciais em pastas, proteger dados com criptografia e biometria, além de oferecer interface moderna no estilo Dark Tech. O app é totalmente em português e prioriza a segurança local sem depender de servidores externos.</p>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+  <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+  <router-link class="card-btn" to="/guardiao">Ver Mais</router-link>
+</div>
         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 75%"></div>
     </div>
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
+
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="@/assets/img/Neon.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title - Neon Code Cafe</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <h5 class="card-title">Neon Code Cafe ☕</h5>
+      <p class="card-text">Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.</p>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+  <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+  <router-link class="card-btn" to="/neon">Ver Mais</router-link>
+</div>
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 100%"></div>
 </div>
@@ -71,13 +97,18 @@ export default {
     </div>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="@/assets/img/Costura.png" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title - Costura Certa</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar" style="width: 20%"></div>
+      <h5 class="card-title">Costura Certa ✂️</h5>
+      <p class="card-text">Aplicativo Ainda em desenvolvimento voltado para gestão de pedidos de costura, permitindo cadastrar medidas, acompanhar pedidos e controlar parte financeira. Interface simples, organizada e com recursos de backup.</p>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+  <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+  <router-link class="card-btn" to="/costura">Ver Mais</router-link>
 </div>
+
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 10%"></div>
+      </div>
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -87,6 +118,10 @@ export default {
 </template>
 
 <style scoped>
+
+.lang-flutter { color: #00CFFF; text-shadow: 0 0 6px #00CFFF; }
+.lang-web { color: #FF00FF; text-shadow: 0 0 6px #FF00FF; }
+
 * {
     font-family: cursive;
     scroll-behavior: smooth;
@@ -152,7 +187,7 @@ export default {
 }
 
 .card-btn {
-  background: linear-gradient(90deg, #00CFFF, #39FF14);
+  background: linear-gradient(90deg, #00CFFF, #1495ff);
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
