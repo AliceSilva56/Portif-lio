@@ -9,7 +9,7 @@ export default {
     <div class="rodape-container">
       <!-- Logo / Marca -->
       <div class="rodape-brand">
-        <img src="@/assets/Alice.png" alt="Logo Alice Dev">
+        <img src="@/assets/img/Alice.png" alt="Logo Alice Dev">
         <h2>Alice Dev</h2>
         <p>Construindo o futuro, um código por vez.</p>
       </div>
@@ -27,8 +27,11 @@ export default {
       <!-- Contato -->
       <div class="rodape-contato">
         <h3>Contato</h3>
-        <p>Email: <a href="mailto:alice.dev@email.com">alice.dev@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/">github.com/alice</a></p>
+        <p>Email: <a target="_blank" rel="noopener noreferrer" href="alicepinheiro016@gmail.com">alicepinheiro016@gmail.com</a></p>
+        <p>GitHub: <a target="_blank" rel="noopener noreferrer" href="https://github.com/AliceSilva56/AliceSilva56">github.com/AliceSilva56</a></p>
+        <p>Instagram: <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/a.pinheiro.dev/#">instagram/@a.pinheiro.dev</a></p>
+        <p>LinkedIn: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alice-pinheiro-da-silva-a966b6319">linkedin.com/Alice</a></p>
+
       </div>
     </div>
 
