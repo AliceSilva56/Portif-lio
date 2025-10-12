@@ -58,11 +58,12 @@
 .subtitulo {
   margin-bottom: 30px;
   font-size: 1.1rem;
-  color: #444;
+  color: #ccc;
 }
 
+/* Links de contato */
 .contact-link {
-  background: #0d0d0d;
+  background: #111;
   color: #00CFFF;
   text-decoration: none;
   padding: 12px 20px;
@@ -75,20 +76,47 @@
 .contact-link:hover {
   color: #fff;
   background: #00CFFF;
-  box-shadow: 0 0 15px #00CFFF;
+  box-shadow: 0 0 15px #00CFFF, 0 0 25px rgba(57,255,20,0.4);
 }
 
 .contact-link i {
   margin-right: 8px;
 }
 
+/* Formulário */
 .contact-form {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #ffffff;
+  border: 1px solid #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 207, 255, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+.contact-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px #00CFFF, 0 0 35px rgba(57,255,20,0.4);
+}
+
+.contact-form .form-control {
+  background: #ffffff;
+  border: 1px solid #00CFFF44;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #39FF14;
+  box-shadow: 0 0 8px #00CFFF;
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+
+/* Botão enviar */
 .btn-enviar {
-  background: linear-gradient(90deg, #00CFFF, #1495ff);
+  background: linear-gradient(90deg, #00CFFF, #39FF14);
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
@@ -97,10 +125,11 @@
   cursor: pointer;
   color: #0d0d0d;
   transition: 0.3s;
+  box-shadow: 0 0 8px #00CFFF, 0 0 12px #39FF14;
 }
 
 .btn-enviar:hover {
   filter: brightness(1.2);
-  box-shadow: 0 0 12px #00CFFF;
+  box-shadow: 0 0 18px #00CFFF, 0 0 28px #39FF14;
 }
 </style>
