@@ -27,3 +27,26 @@ const posts = ref([
   }
 ])
 </script>
+
+<style scoped>
+
+.list-group-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.list-group-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 12px #00CFFF66;
+  background-color: #111;
+  color: #39FF14;
+}
+.btn-outline-primary {
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  color: #0d0d0d;
+  background: linear-gradient(90deg, #00CFFF, #39FF14);
+  border-color: #00CFFF;
+}
+
+</style>

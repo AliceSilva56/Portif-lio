@@ -27,11 +27,10 @@ export default {
       <!-- Contato -->
       <div class="rodape-contato">
         <h3>Contato</h3>
-        <p>Email: <a target="_blank" rel="noopener noreferrer" href="alicepinheiro016@gmail.com">alicepinheiro016@gmail.com</a></p>
+        <p>Email: <a target="_blank" rel="noopener noreferrer" href="mailto:alicepinheiro016@gmail.com">alicepinheiro016@gmail.com</a></p>
         <p>GitHub: <a target="_blank" rel="noopener noreferrer" href="https://github.com/AliceSilva56/AliceSilva56">github.com/AliceSilva56</a></p>
         <p>Instagram: <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/a.pinheiro.dev/#">instagram/@a.pinheiro.dev</a></p>
         <p>LinkedIn: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alice-pinheiro-da-silva-a966b6319">linkedin.com/Alice</a></p>
-
       </div>
     </div>
 
@@ -43,11 +42,12 @@ export default {
 
 <style scoped>
 .rodape {
-  color: #000000ff;
+  color: #000;
   padding: 40px 20px 10px;
   border-top: 2px solid #00CFFF;
   box-shadow: 0 -4px 20px rgba(0, 207, 255, 0.3);
   font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
 }
 
 .rodape-container {
@@ -60,6 +60,7 @@ export default {
 
 .rodape-brand {
   max-width: 250px;
+  text-align: center;
 }
 
 .rodape-brand img {
@@ -67,19 +68,25 @@ export default {
   height: 60px;
   border-radius: 12px;
   margin-bottom: 10px;
-  box-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
+  box-shadow: 0 0 12px #39FF14, 0 0 24px rgba(57, 255, 20, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rodape-brand img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #39FF14, 0 0 40px rgba(57, 255, 20, 0.6);
 }
 
 .rodape-brand h2 {
-  color: #55ab46ff;
+  color: #39FF14;
   margin: 5px 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-shadow: 0 0 8px #39FF14;
 }
 
 .rodape-brand p {
-  font-size: 0.9rem;
-  color: #000000ff;
+  font-size: 0.95rem;
+  color: #000000;
 }
 
 .rodape-links h3,
@@ -89,6 +96,7 @@ export default {
   font-size: 1rem;
   text-shadow: 0 0 6px #00CFFF;
 }
+
 .rodape-links ul {
   list-style: none;
   padding: 0;
@@ -101,7 +109,7 @@ export default {
 
 .rodape-links a {
   text-decoration: none;
-  color: #000000ff;
+  color: #000000;
   transition: color 0.3s, text-shadow 0.3s;
 }
 
@@ -116,7 +124,7 @@ export default {
 }
 
 .rodape-contato a {
-  color: #000000ff;
+  color: #ccc;
   text-decoration: none;
   transition: color 0.3s, text-shadow 0.3s;
 }
@@ -131,6 +139,21 @@ export default {
   padding-top: 15px;
   border-top: 1px solid #222;
   font-size: 0.85rem;
-  color: #000000ff;
+  color: #888;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .rodape-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .rodape-brand h2 {
+    font-size: 1.3rem;
+  }
+  .rodape-links, .rodape-contato {
+    text-align: center;
+  }
 }
 </style>

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="neon-page">
+  <div class="aly-page">
 
     <!-- Botão voltar -->
     <div class="voltar-container">
@@ -13,18 +13,19 @@ export default {
     </div>
 
     <!-- Conteúdo -->
-    <div class="neon-container">
-      <img src="@/assets/img/Neon.png" alt="Neon code café" class="neon-img" />
+    <div class="aly-container">
+      <img src="@/assets/img/Neon.png" alt="Neon Code Café" class="aly-img" />
 
-      <div class="card neon-card">
+      <div class="card aly-card">
         <h2 class="card-title">Neon Code Cafe ☕</h2>
         <p class="card-text">
           Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.
         </p>
+
         <div class="btn-group">
-          <a href="https://neon-code-cafe-1.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+          <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-          <a href="https://github.com/AliceSilva56/neon-code-cafe" target="_blank" class="btn btn-dark">Ver Repositório</a>
+          <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
     </div>
@@ -37,7 +38,7 @@ export default {
 }
 
 .btn-voltar {
-  background: linear-gradient(90deg, #00CFFF, #1495ff);
+  background: linear-gradient(90deg, #00CFFF, #39FF14);
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
@@ -50,35 +51,89 @@ export default {
 
 .btn-voltar:hover {
   filter: brightness(1.2);
-  box-shadow: 0 0 10px #00CFFF;
+  box-shadow: 0 0 12px #00CFFF, 0 0 24px rgba(0, 207, 255, 0.5);
 }
 
-/* layout */
-.neon-container {
+/* Layout principal */
+.aly-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 32px;
+  padding: 20px;
+  margin-bottom: 150px;
 }
 
-.neon-img {
-  width: 450px;
+/* Imagem */
+.aly-img {
+  width: 100%;
+  max-width: 450px;
   height: auto;
   border-radius: 16px;
+  box-shadow: 0 0 12px #39FF14, 0 0 24px rgba(57, 255, 20, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.neon-card {
+.aly-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #39FF14, 0 0 40px rgba(57, 255, 20, 0.6);
+}
+
+/* Card */
+.aly-card {
   flex: 1;
-  max-width: 1000px;
+  min-width: 300px;
+  max-width: 600px;
   padding: 24px;
-  box-shadow: 0 2px 12px #00CFFF44;
+  background: #111;
   border-radius: 16px;
+  box-shadow: 0 0 16px #00CFFF44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aly-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 24px #00CFFF, 0 0 48px rgba(0, 207, 255, 0.4);
 }
 
 .card-title {
   color: #00CFFF;
-  text-align: left;
   margin-bottom: 16px;
+  text-shadow: 0 0 8px #00CFFF;
+}
+
+.card-text {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Botões do card */
+.btn-group a {
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.btn-group a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00CFFF, 0 0 24px rgba(0, 207, 255, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .aly-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aly-card {
+    width: 90%;
+  }
+
+  .aly-img {
+    max-width: 80%;
+  }
 }
 </style>
