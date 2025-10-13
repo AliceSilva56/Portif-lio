@@ -17,7 +17,7 @@ export default {
      <p class="card-text">Aplicativo temático inspirado em gatos, desenvolvido para cálculo de diferença de tempo entre duas datas/horas. Traz uma experiência divertida e funcional, com identidade visual personalizada.</p>
     
      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
-      <span class="lang-text lang-flutter">Linguagem: Flutter (Dart)</span>
+      <span class="lang-text lang-flutter">Linguagem: Android Nativo (Java)</span>
       <router-link class="card-btn" to="/miauh">Ver Mais</router-link>
     </div>
     
