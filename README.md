@@ -114,15 +114,6 @@ npm run dev
 Depois, abra no navegador:
 👉 http://localhost:5173/
 
-📈 Futuras Implementações
- Modo Confidencial (para projetos privados)
-
- Integração com API de Medium/Dev.to para posts automáticos
-
- Animações de entrada com Framer Motion Vue
-
- Suporte multilíngue (PT/EN)
-
 💬 Contato
 🌐 Site: meuportifolio.com
 
@@ -133,16 +124,13 @@ Depois, abra no navegador:
 🐙 GitHub: github.com/alicepinheiro
 
 🦾 Filosofia
+
 “O código é a arquitetura invisível que molda realidades.”
 — Alice Pinheiro da Silva
 
 ⭐ Deixe uma estrela se curtir o projeto!
-yaml
-Copiar código
 
 ---
-
-Quer que eu monte também a **versão do README com badges** (Vue, CSS3, GitHub, Vite, etc.) e um **banner visual no topo** pra destacar o portfólio no GitHub? Fica bem profissional.
 
 
 
