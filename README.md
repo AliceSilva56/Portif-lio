@@ -40,8 +40,6 @@ src/
 │ ├─ Rodape.vue
 │ ├─ Timeline.vue
 │ ├─ TypeWriter.vue
-│ ├─ NeonButton.vue
-│ └─ ProjectGallery.vue
 │
 ├─ router/
 │ └─ index.js
