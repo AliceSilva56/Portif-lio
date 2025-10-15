@@ -1,31 +1,31 @@
 <script>
 export default {
-  name: "Fluxo"
+  name: "Costura"
 }
 </script>
 
 <template>
-  <div class="fluxo-page">
+  <div class="costura-page">
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
-    <div class="fluxo-container">
-      <img src="@/assets/img/Fluxo.png" alt="FluxoApp" class="fluxo-img" />
+    <div class="costura-container">
+      <img src="@/assets/img/projetos/Costura.png" alt="Costura Certa" class="costura-img" />
 
-      <div class="card fluxo-card">
-        <h2 class="card-title">FluxoApp 🚀</h2>
+      <div class="card costura-card">
+        <h2 class="card-title">Costura Certa ✂️</h2>
         <p class="card-text">
-          Aplicativo de controle financeiro pessoal, com registro de gastos, gráficos dinâmicos, resumo de períodos e exportação em PDF. Focado em ajudar o usuário a equilibrar finanças de forma prática e visual.
+          Aplicativo em desenvolvimento voltado para gestão de pedidos de costura, permitindo cadastrar medidas, acompanhar pedidos e controlar parte financeira. Interface simples, organizada e com recursos de backup.
         </p>
 
         <div class="btn-group">
-          <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+          <a href="https://costura-certa-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-          <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
+          <a href="https://github.com/AliceSilva56/costura-certa" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@ export default {
 }
 
 /* Layout principal */
-.fluxo-container {
+.costura-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -66,7 +66,7 @@ export default {
 }
 
 /* Imagem */
-.fluxo-img {
+.costura-img {
   width: 100%;
   max-width: 450px;
   height: auto;
@@ -75,13 +75,13 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fluxo-img:hover {
+.costura-img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #39FF14, 0 0 40px rgba(57, 255, 20, 0.6);
 }
 
 /* Card */
-.fluxo-card {
+.costura-card {
   flex: 1;
   min-width: 300px;
   max-width: 600px;
@@ -92,7 +92,7 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.fluxo-card:hover {
+.costura-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 24px #00CFFF, 0 0 48px rgba(0, 207, 255, 0.4);
 }
@@ -123,16 +123,16 @@ export default {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .fluxo-container {
+  .costura-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .fluxo-card {
+  .costura-card {
     width: 90%;
   }
 
-  .fluxo-img {
+  .costura-img {
     max-width: 80%;
   }
 }

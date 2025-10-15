@@ -11,7 +11,7 @@ export default {
 
 <div class="card-group">
   <div class="card">
-    <img src="@/assets/img/Miauh.png" class="card-img-top" alt="Miauh Timer">
+    <img src="@/assets/img/projetos/Miauh.png" class="card-img-top" alt="Miauh Timer">
     <div class="card-body">
       <h5 class="card-title">Miauh Timer 🐾</h5>
      <p class="card-text">Aplicativo temático inspirado em gatos, desenvolvido para cálculo de diferença de tempo entre duas datas/horas. Traz uma experiência divertida e funcional, com identidade visual personalizada.</p>
@@ -29,7 +29,7 @@ export default {
   </div>
 
   <div class="card">
-    <img src="@/assets/img/Aly.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/projetos/Aly.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Chat Aly 🤖</h5>
       <p class="card-text">Assistente virtual em forma de chat interativo, que combina mensagens, chamadas e até histórias interativas com escolhas do usuário. Um projeto que une comunicação e entretenimento de forma criativa.</p>
@@ -46,7 +46,7 @@ export default {
     </div>
   </div>
   <div class="card">
-    <img src="@/assets/img/Fluxo.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/projetos/Fluxo.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">FluxoApp 🚀</h5>
       <p class="card-text">Aplicativo de controle financeiro pessoal, com registro de gastos, gráficos dinâmicos, resumo de períodos e exportação em PDF. Focado em ajudar o usuário a equilibrar finanças de forma prática e visual.</p>
@@ -66,7 +66,7 @@ export default {
 <br>
 <div class="card-group">
   <div class="card">
-    <img src="@/assets/img/Guardiao.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/projetos/Guardiao.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Guardião de Senhas 🔐</h5>
       <p class="card-text">Aplicativo focado em armazenamento seguro de senhas. Permite organizar credenciais em pastas, proteger dados com criptografia e biometria, além de oferecer interface moderna no estilo Dark Tech. O app é totalmente em português e prioriza a segurança local sem depender de servidores externos.</p>
@@ -82,7 +82,7 @@ export default {
   </div>
 
   <div class="card">
-    <img src="@/assets/img/Neon.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/projetos/Neon.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Neon Code Cafe ☕</h5>
       <p class="card-text">Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.</p>
@@ -97,7 +97,7 @@ export default {
     </div>
   </div>
   <div class="card">
-    <img src="@/assets/img/Costura.png" class="card-img-top" alt="...">
+    <img src="@/assets/img/projetos/Costura.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Costura Certa ✂️</h5>
       <p class="card-text">Aplicativo Ainda em desenvolvimento voltado para gestão de pedidos de costura, permitindo cadastrar medidas, acompanhar pedidos e controlar parte financeira. Interface simples, organizada e com recursos de backup.</p>

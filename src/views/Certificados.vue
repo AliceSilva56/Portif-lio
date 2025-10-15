@@ -7,8 +7,9 @@
           <img :src="cert.imagem" class="card-img-top" alt="Certificado" />
           <div class="card-body">
             <h5 class="card-title">{{ cert.titulo }}</h5>
-            <p class="card-text">{{ cert.descricao }}</p>
-            <a :href="cert.link" target="_blank" class="btn btn-neon btn-sm">Ver Certificado</a>
+            <!-- Efeito máquina de escrever -->
+            <TypeWriter :text="cert.descricao" :speed="35" />
+            <a :href="cert.link" target="_blank" class="btn btn-neon btn-sm mt-3">Ver Certificado</a>
           </div>
         </div>
       </div>
@@ -18,42 +19,43 @@
 
 <script setup>
 import { ref } from 'vue'
+import TypeWriter from '@/components/TypeWriter.vue'
 
 const certificados = ref([
   {
     titulo: 'Curso Fullstack Presencial',
     descricao: 'Aprendizado completo de front-end e back-end em ambiente presencial.',
-    imagem: '/img/certificado-fullstack-presencial.png',
+    imagem: new URL('@/assets/img/certificados/certificado-fullstack-presencial.png', import.meta.url).href,
     link: '#'
   },
   {
     titulo: 'Curso Fullstack Online',
     descricao: 'Curso remoto de desenvolvimento completo, focado em Vue.js, Node.js e MySQL.',
-    imagem: '/img/certificado-fullstack-online.png',
+    imagem: new URL('@/assets/img/certificados/certificado-fullstack-online.png', import.meta.url).href,
     link: '#'
   },
   {
     titulo: 'Curso Técnico de Desenvolvimento de Sistemas',
     descricao: 'Formação técnica em programação, banco de dados e sistemas web.',
-    imagem: '/img/certificado-tecnico.png',
+    imagem: new URL('@/assets/img/certificados/certificado-tecnico.png', import.meta.url).href,
     link: '#'
   },
   {
     titulo: 'Design de Interfaces Web',
     descricao: 'Aprendizado em UX/UI e design responsivo para aplicações web.',
-    imagem: '/img/certificado-ui.png',
+    imagem: new URL('@/assets/img/certificados/certificado-ui.png', import.meta.url).href,
     link: '#'
   },
   {
     titulo: 'JavaScript Avançado',
     descricao: 'Curso aprofundado em JavaScript moderno e boas práticas.',
-    imagem: '/img/certificado-js.png',
+    imagem: new URL('@/assets/img/certificados/certificado-js.png', import.meta.url).href,
     link: '#'
   },
   {
     titulo: 'Git e Controle de Versão',
     descricao: 'Treinamento em Git, GitHub e fluxos de trabalho colaborativos.',
-    imagem: '/img/certificado-git.png',
+    imagem: new URL('@/assets/img/certificados/certificado-git.png', import.meta.url).href,
     link: '#'
   }
 ])
@@ -95,12 +97,6 @@ h1 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   text-shadow: 0 0 8px #39FF14;
-}
-
-.card-text {
-  color: #ccc;
-  font-size: 0.95rem;
-  line-height: 1.5;
 }
 
 /* Botão neon */

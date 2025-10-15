@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "Neon"
+  name: "Miauh"
 }
 </script>
 
@@ -9,21 +9,22 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
     <div class="aly-container">
-      <img src="@/assets/img/Neon.png" alt="Neon Code Café" class="aly-img" />
+      <img src="@/assets/img/projetos/Miauh.png" alt="Miauh Timer" class="aly-img" />
 
       <div class="card aly-card">
-        <h2 class="card-title">Neon Code Cafe ☕</h2>
+        <h2 class="card-title">Miauh Timer 🐾</h2>
         <p class="card-text">
-          Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.
+          Aplicativo temático inspirado em gatos, desenvolvido para cálculo de diferença de tempo entre duas datas/horas.<br>
+          Traz uma experiência divertida e funcional, com identidade visual personalizada.
         </p>
 
         <div class="btn-group">
-          <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+          <a href="https://miauh-timer-web.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
           <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
@@ -62,7 +63,6 @@ export default {
   flex-wrap: wrap;
   gap: 32px;
   padding: 20px;
-  margin-bottom: 150px;
 }
 
 /* Imagem */

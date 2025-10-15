@@ -33,10 +33,7 @@ export default {
 
             <!-- Currículo -->
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="curriculo.pdf" download>
-                📄 Currículo
-                <button class="btn btn-sm btn-outline-primary ms-2">Baixar</button>
-              </a>
+              <router-link class="dropdown-item" to="/curriculo-view">📄 Curriculo</router-link>
             </li>
 
             <!-- Certificados -->
