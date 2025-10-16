@@ -25,7 +25,7 @@ export default {
 
         <div class="btn-group">
           <a href="https://chat-aly-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
-          <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
+          <a href="https://github.com/AliceSilva56/Chat-Aly/releases/tag/Chat-Aly" target="_blank" class="btn btn-success">Baixar APK</a>
           <a href="https://github.com/AliceSilva56/chat-aly" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>

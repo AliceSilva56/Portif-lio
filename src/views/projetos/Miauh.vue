@@ -9,7 +9,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->

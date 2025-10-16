@@ -24,7 +24,7 @@ export default {
 
         <div class="btn-group">
           <a href="https://costura-certa-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
-          <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
+          <a href="https://github.com/AliceSilva56/Costura-Certa/releases/tag/Costura-Certa" target="_blank" class="btn btn-success">Baixar APK</a>
           <a href="https://github.com/AliceSilva56/costura-certa" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
