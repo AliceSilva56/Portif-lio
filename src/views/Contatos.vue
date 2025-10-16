@@ -50,6 +50,7 @@
 </script>
 
 <style scoped>
+
 .titulo {
   color: #00CFFF;
   text-shadow: 0 0 8px #00CFFF;

@@ -5,17 +5,17 @@ import Rodape from './components/Rodape.vue';
 import Timeline from './components/Timeline.vue';
 import My from './components/My.vue';
 import router from './router/index.js';
-import LoadingScreen from './components/LoadingScreen.vue'
+import TelaBoot from './components/TelaBoot.vue';
 
 export default {
   name: 'App',
-  components: { router, NavBar, My, Timeline, Card, Rodape, LoadingScreen}
+  components: { router, NavBar, My, Timeline, Card, Rodape, TelaBoot}
 }
 </script>
 
 <template>
   <div>
-  <LoadingScreen />
+  <TelaBoot />
   <NavBar />
   <router-view />
   <Rodape />

@@ -1,12 +1,14 @@
 <template>
   <transition name="fade">
     <div v-if="show" class="loading-screen">
+      <!-- ==== Tela inicial ==== -->
       <div v-if="!iniciou" class="start-screen">
         <h1 class="title">🌌 Portfólio de <span>Alice Pinheiro da Silva</span></h1>
         <button class="start-btn" @click="iniciarAnimacao">▶ Iniciar</button>
       </div>
 
-      <div v-else class="loading-content">
+      <!-- ==== Carregamento / Partículas ==== -->
+      <div v-else-if="!bootTerminalConcluido" class="loading-content">
         <div id="particles-bg"></div>
         <h1 class="glow-text">
           Portfólio de <span>Alice Pinheiro da Silva</span>
@@ -16,12 +18,18 @@
           <div class="progress" :style="{ width: progress + '%' }"></div>
         </div>
       </div>
+
+      <!-- ==== Sequência Terminal IA ==== -->
+      <div v-else class="terminal-screen">
+        <pre>{{ terminalText }}</pre>
+      </div>
     </div>
   </transition>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import soundFile from '@/assets/sounds/robotic.mp3'
 
 const show = ref(true)
 const iniciou = ref(false)
@@ -29,6 +37,20 @@ const progress = ref(0)
 const subtitle = ref('Preparando sequência criativa...')
 let audioCtx = null
 let buffer = null
+let source = null
+let gainNode = null
+
+// Terminal IA
+const bootTerminalConcluido = ref(false)
+const terminalText = ref('')
+const terminalLines = [
+  "Initializing Cyber Portfólio...",
+  "Loading modules...",
+  "Connecting neural network...",
+  "AI assistant online.",
+  "Welcome, Alice."
+]
+let lineIndex = 0
 
 async function iniciarAnimacao() {
   iniciou.value = true
@@ -39,7 +61,7 @@ async function iniciarAnimacao() {
     'Iniciando sequência criativa...',
     'Carregando ideias brilhantes...',
     'Conectando ao fluxo imaginativo...',
-    'Liberando energia neural...',
+    'Liberando energia neural...'
   ]
 
   const fraseInterval = setInterval(() => {
@@ -52,16 +74,12 @@ async function iniciarAnimacao() {
     } else {
       clearInterval(progressInterval)
       clearInterval(fraseInterval)
-      setTimeout(() => (show.value = false), 500)
+      iniciarTerminal()
     }
   }, 100)
 }
 
-import soundFile from '@/assets/sounds/robotic.mp3'
-
-let source = null
-let gainNode = null
-
+// ==== Som do boot ====
 async function tocarSom() {
   try {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)()
@@ -70,7 +88,7 @@ async function tocarSom() {
     buffer = await audioCtx.decodeAudioData(arrayBuffer)
 
     gainNode = audioCtx.createGain()
-    gainNode.gain.value = 0.8 // volume inicial
+    gainNode.gain.value = 0.8
 
     source = audioCtx.createBufferSource()
     source.buffer = buffer
@@ -78,7 +96,6 @@ async function tocarSom() {
     gainNode.connect(audioCtx.destination)
     source.start(0)
 
-    // Dura uns 3 segundos (tempo da animação)
     setTimeout(() => pararSomSuave(), 2900)
   } catch (err) {
     console.error('Erro ao tocar som:', err)
@@ -87,7 +104,7 @@ async function tocarSom() {
 
 function pararSomSuave() {
   if (!gainNode || !audioCtx) return
-  const fadeTime = 0.6 // segundos
+  const fadeTime = 0.6
   gainNode.gain.linearRampToValueAtTime(0, audioCtx.currentTime + fadeTime)
   setTimeout(() => {
     source?.stop(0)
@@ -95,9 +112,7 @@ function pararSomSuave() {
   }, fadeTime * 1000)
 }
 
-
-
-// Partículas animadas
+// ==== Partículas ====
 function createParticles() {
   const container = document.getElementById('particles-bg')
   if (!container) return
@@ -112,6 +127,20 @@ function createParticles() {
     particle.style.setProperty('--move-y', `${Math.random() * 40 - 20}px`)
     container.appendChild(particle)
   }
+}
+
+// ==== Sequência Terminal IA ====
+function iniciarTerminal() {
+  let interval = setInterval(() => {
+    if (lineIndex < terminalLines.length) {
+      terminalText.value += terminalLines[lineIndex] + '\n'
+      lineIndex++
+    } else {
+      clearInterval(interval)
+      setTimeout(() => (show.value = false), 500) // fim do boot, mostra portfólio
+      bootTerminalConcluido.value = true
+    }
+  }, 500)
 }
 </script>
 
@@ -143,9 +172,7 @@ function createParticles() {
   margin-bottom: 20px;
   text-shadow: 0 0 10px #00e6ff, 0 0 20px #ff00d9;
 }
-.title span {
-  color: #ff00d9;
-}
+.title span { color: #ff00d9; }
 
 .start-btn {
   background: linear-gradient(90deg, #00e6ff, #ff00d9);
@@ -182,16 +209,9 @@ function createParticles() {
   opacity: 0.7;
   animation: float 4s infinite ease-in-out alternate;
 }
-
 @keyframes float {
-  from {
-    transform: translate(0, 0);
-    opacity: 0.5;
-  }
-  to {
-    transform: translate(var(--move-x), var(--move-y));
-    opacity: 1;
-  }
+  from { transform: translate(0, 0); opacity: 0.5; }
+  to { transform: translate(var(--move-x), var(--move-y)); opacity: 1; }
 }
 
 .loading-content {
@@ -206,7 +226,6 @@ function createParticles() {
   text-shadow: 0 0 10px #00e6ff, 0 0 30px #0077ff;
   animation: flicker 1.5s infinite alternate;
 }
-
 .glow-text span {
   color: #ff00d9;
   text-shadow: 0 0 10px #ff00d9, 0 0 30px #8b00ff;
@@ -235,14 +254,18 @@ function createParticles() {
   transition: width 0.1s linear;
 }
 
+/* ==== Terminal IA ==== */
+.terminal-screen {
+  color: #00FFEE;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  text-align: left;
+  font-size: 1.2rem;
+}
 .fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
+.fade-leave-active { transition: opacity 0.5s ease; }
 .fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
+.fade-leave-to { opacity: 0; }
 
 @keyframes flicker {
   0% { opacity: 0.9; }
