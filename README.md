@@ -101,10 +101,10 @@ Copiar código
 
 ```bash
 # Clone este repositório
-git clone https://github.com/seuusuario/seu-portfolio.git
+git clone https://github.com/AliceSilva56/Portif-lio
 
 # Acesse a pasta
-cd seu-portfolio
+cd Portif-lio
 
 # Instale as dependências
 npm install
@@ -121,11 +121,11 @@ Depois, abra no navegador:
 
 💼 LinkedIn: linkedin.com/in/alicepinheiro
 
-🐙 GitHub: github.com/alicepinheiro
+🐙 GitHub: github.com/AliceSilva56
 
 🦾 Filosofia
 
-“O código é a arquitetura invisível que molda realidades.”
+“ O código é a arquitetura invisível que molda realidades.”
 — Alice Pinheiro da Silva
 
 ⭐ Deixe uma estrela se curtir o projeto!

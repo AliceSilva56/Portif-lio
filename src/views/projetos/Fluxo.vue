@@ -24,7 +24,7 @@ export default {
 
         <div class="btn-group">
           <a href="https://fluxo-app-web-42dm.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
-          <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
+          <a href="https://github.com/AliceSilva56/FluxoApp/releases/tag/FluxoApp" target="_blank" class="btn btn-success">Baixar APK</a>
           <a href="https://github.com/AliceSilva56/fluxoapp" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
