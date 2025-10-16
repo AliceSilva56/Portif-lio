@@ -11,7 +11,8 @@ export default {
     <!-- Nome / Marca -->
     <a class="navbar-brand">Portfólio - Alice P. da Silva</a>
 
-    <!-- Botão hamburger para telas pequenas -->
+    
+     <!-- Botão hamburger para telas pequenas -->
     <button 
       class="navbar-toggler" 
       type="button" 
@@ -21,7 +22,8 @@ export default {
       aria-expanded="false" 
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <!-- Aqui colocamos o ≡ para aparecer sempre -->
+      ≡
     </button>
 
     <!-- Links do menu -->
@@ -72,10 +74,11 @@ export default {
     font-family: cursive;
     scroll-behavior: smooth;
 }
+
 .navbar {
-    background: #111;
-    border-bottom: 1px solid #222;
-    box-shadow: 0 0 12px rgba(0, 207, 255, 0.2);
+    background: #f8f9fa; /* fundo claro */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .nav-link:hover, 
@@ -84,12 +87,12 @@ export default {
     text-shadow: 0 0 8px #00CFFF;
 }
 
-/* Personaliza o ícone hamburger */
+/* Personaliza o ícone hamburger para tema claro */
 .navbar-toggler {
     border-color: #00CFFF;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 207, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
 }
 </style>
