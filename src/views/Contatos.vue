@@ -11,11 +11,8 @@
         <a href="mailto:seuemail@gmail.com" class="contact-link">
           <i class="fas fa-envelope"></i> Email
         </a>
-        <a href="https://github.com/seuusuario" target="_blank" class="contact-link">
+        <a href="https://github.com/AliceSilva56" target="_blank" class="contact-link">
           <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://linkedin.com/in/seuusuario" target="_blank" class="contact-link">
-          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
         <a href="https://wa.me/5599999999999" target="_blank" class="contact-link">
           <i class="fab fa-whatsapp"></i> WhatsApp

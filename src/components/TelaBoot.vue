@@ -28,8 +28,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import soundFile from '@/assets/sounds/robotic.mp3'
+
+import { ref, defineEmits } from 'vue'
+
+const emit = defineEmits(['fimBoot'])
+
 
 const show = ref(true)
 const iniciou = ref(false)
@@ -137,11 +141,17 @@ function iniciarTerminal() {
       lineIndex++
     } else {
       clearInterval(interval)
-      setTimeout(() => (show.value = false), 500) // fim do boot, mostra portfólio
       bootTerminalConcluido.value = true
+
+      // Dá tempo pra exibir o último texto
+      setTimeout(() => {
+        show.value = false
+       emit('fimBoot')  // 🔥 avisa o App.vue que terminou o boot
+      }, 400)
     }
-  }, 500)
+  }, 400)
 }
+
 </script>
 
 <style scoped>
