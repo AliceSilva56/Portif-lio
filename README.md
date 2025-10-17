@@ -17,7 +17,7 @@ Este é o meu **Portfólio de Desenvolvimento**, um espaço interativo que mostr
 🧠 **Tecnologias do Futuro**
 
 ⚙️ Vue.js 3 (Composition API)  
-🎨 HTML5 + CSS3 (Dark Neon Theme)  
+🎨 HTML5 + CSS3 ( Neon Theme)  
 💡 JavaScript ES6+  
 🧭 Vue Router  
 🔤 Google Fonts: Orbitron / Poppins  
@@ -26,7 +26,7 @@ Este é o meu **Portfólio de Desenvolvimento**, um espaço interativo que mostr
 ─────────────────────────────────────────────
 
 🧩 **Estrutura do Universo**
-
+```
 src/
 ├─ assets/
 │ ├─ img/
@@ -63,7 +63,7 @@ src/
 │ ├─ CurriculoView.vue
 │ └─ Home.vue
 └─ App.vue
-
+```
 ─────────────────────────────────────────────
 
 🌌 **Páginas Principais**
