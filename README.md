@@ -1,49 +1,48 @@
-# 💻 Portfólio — Alice Pinheiro da Silva
+ 🌌  PORTFÓLIO CYBER — Alice Pinheiro da Silva 
 
-Bem-vindo(a) ao meu **Portfólio de Desenvolvimento**, um espaço onde reúno minha jornada como desenvolvedora, meus projetos mais marcantes e meus aprendizados no mundo da tecnologia.  
-Aqui você vai encontrar **criatividade, código e um toque de neon futurista.**
+Bem-vindo(a) ao meu **universo digital**, onde **código, criatividade e neon se encontram**.  
+Este é o meu **Portfólio de Desenvolvimento**, um espaço interativo que mostra minha jornada, meus projetos mais marcantes e meu toque pessoal no mundo da tecnologia.  
 
----
+💻 Acesse online: [Portfólio Beta](https://portif-lio-beta-ecru.vercel.app)
 
-## 🚀 Sobre o Projeto
+─────────────────────────────────────────────
 
-Este portfólio foi desenvolvido em **Vue.js 3** com **arquitetura modular e visual Dark Tech**, trazendo um estilo moderno, dinâmico e responsivo.  
-A ideia é apresentar meus projetos, certificados, artigos e trajetória de forma interativa e fluida.
+🚀 **Sobre o Projeto**
 
----
+> "Este portfólio foi desenvolvido com Vue.js 3, arquitetura modular e um tema Tech inspirado em filmes cyberpunk.  
+> Experiência interativa, fluida e memorável com animações, partículas e efeitos de neon."
 
-## 🧠 Tecnologias Utilizadas
+─────────────────────────────────────────────
 
-- ⚙️ **Vue.js 3 (Composition API)**
-- 🎨 **HTML5 + CSS3 (Dark Neon Theme)**
-- 💡 **JavaScript ES6+**
-- 🧭 **Vue Router**
-- 🔤 **Google Fonts (Orbitron / Poppins)**
-- ✨ **Animações e Transições com CSS e AOS**
+🧠 **Tecnologias do Futuro**
 
----
+⚙️ Vue.js 3 (Composition API)  
+🎨 HTML5 + CSS3 (Dark Neon Theme)  
+💡 JavaScript ES6+  
+🧭 Vue Router  
+🔤 Google Fonts: Orbitron / Poppins  
+✨ Animações e Transições CSS / AOS  
 
-## 🧩 Estrutura do Projeto
+─────────────────────────────────────────────
+
+🧩 **Estrutura do Universo**
 
 src/
-│
 ├─ assets/
 │ ├─ img/
 │ └─ css/
 │ ├─ main.css
 │ └─ animations.css
-│
 ├─ components/
 │ ├─ Card.vue
 │ ├─ My.vue
 │ ├─ NavBar.vue
 │ ├─ Rodape.vue
 │ ├─ Timeline.vue
-│ ├─ TypeWriter.vue
-│
+│ └─ TypeWriter.vue
+│ └─ TelaBoot.vue
 ├─ router/
 │ └─ index.js
-│
 ├─ views/
 │ ├─ projetos/
 │ │ ├─ Aly.vue
@@ -52,88 +51,82 @@ src/
 │ │ ├─ Guardiao.vue
 │ │ ├─ Miauh.vue
 │ │ └─ Neon.vue
-│ │
 │ ├─ posts/
 │ │ ├─ InicioDev.vue
 │ │ ├─ VueDicas.vue
 │ │ ├─ FlutterBasico.vue
 │ │ ├─ FlutterDarckTech.vue
 │ │ └─ _artigo.css
-│ │
 │ ├─ Blog.vue
 │ ├─ Certificado.vue
 │ ├─ Contatos.vue
 │ ├─ CurriculoView.vue
 │ └─ Home.vue
-│
 └─ App.vue
 
-yaml
-Copiar código
+─────────────────────────────────────────────
 
----
-
-## 🌌 Páginas Principais
+🌌 **Páginas Principais**
 
 | Página | Descrição |
 |--------|------------|
-| 🏠 **Home** | Página inicial com animação de máquina de escrever e introdução sobre mim. |
-| 🧑‍💻 **Projetos** | Seção com meus principais apps e sistemas (Guardião de Senhas, FluxoApp, etc). |
-| 📰 **Blog** | Espaço com artigos e dicas sobre Vue, Flutter e desenvolvimento. |
-| 📜 **Certificados** | Exposição dos meus certificados com visual interativo. |
-| 💼 **Currículo** | Visualização rápida do meu perfil profissional e trajetória. |
+| 🏠 **Home** | Introdução interativa com máquina de escrever neon e partículas. |
+| 🧑‍💻 **Projetos** | Apps e sistemas mais importantes para mim (Guardião de Senhas, FluxoApp, Miauh Timer...). |
+| 📰 **Blog** | Artigos e dicas sobre Vue, Flutter e desenvolvimento futurista. |
+| 📜 **Certificados** | Certificados exibidos de forma interativa com neon. |
+| 💼 **Currículo** | Perfil profissional e trajetória. |
 | 📬 **Contatos** | Formas de entrar em contato e redes sociais. |
 
----
+─────────────────────────────────────────────
 
-## 🔥 Destaques
+🔥 **Destaques Cósmicos**
 
-- 🌈 Tema **Dark Futurista Neon**
-- 🎬 Efeitos visuais e transições suaves entre rotas
-- 🧱 Componentização completa para fácil manutenção
-- 📱 100% Responsivo
-- 🧭 Navegação fluida e moderna com Vue Router
-- 🪩 Efeito **TypeWriter** customizado em neon
+🌈 Futurista Neon Theme  
+🎬 Efeitos visuais e transições suaves entre páginas  
+🧱 Componentização total para fácil manutenção  
+📱 100% Responsivo  
+🧭 Navegação moderna com Vue Router  
+🪩 Efeito TypeWriter neon customizado  
 
----
+─────────────────────────────────────────────
 
-## 🧰 Como Executar Localmente
+🧰 **Executando Localmente**
 
 ```bash
-# Clone este repositório
+# Clone o repositório
 git clone https://github.com/AliceSilva56/Portif-lio
 
 # Acesse a pasta
 cd Portif-lio
 
-# Instale as dependências
+# Instale dependências
 npm install
 
 # Execute o servidor de desenvolvimento
 npm run dev
-Depois, abra no navegador:
-👉 http://localhost:5173/
 
-💬 Contato
-🌐 Site: meuportifolio.com
+# Abra no navegador
+http://localhost:5173/
+─────────────────────────────────────────────
 
-📧 Email: alice.dev@example.com
+💬 Contato & Conexões
 
-💼 LinkedIn: linkedin.com/in/alicepinheiro
+📧 @a.pinheiro.dev.com
+🐙 GitHub:AliceSilva56
 
-🐙 GitHub: github.com/AliceSilva56
+─────────────────────────────────────────────
 
 🦾 Filosofia
 
-“ O código é a arquitetura invisível que molda realidades.”
+“O código é a arquitetura invisível que molda realidades.”
 — Alice Pinheiro da Silva
 
-⭐ Deixe uma estrela se curtir o projeto!
+─────────────────────────────────────────────
 
----
+⭐ Se curtiu, deixe sua estrela e espalhe o neon!
 
+─────────────────────────────────────────────
 
-
-
-
-
+┌─🖖 Prepare-se para mergulhar no universo cyberpunk da Alice ─┐
+│ O neon brilha, o código flui e a criatividade não tem limites │
+└──────────────────────────────────────────────────────────────┘
