@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "Aly"
+  name: "Neon"
 }
 </script>
 
@@ -9,23 +9,28 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
     <div class="aly-container">
-      <img src="@/assets/img/Aly.png" alt="Chat Aly" class="aly-img" />
+      <img src="@/assets/img/projetos/Neon.png" alt="Neon Code Café" class="aly-img" />
 
       <div class="card aly-card">
-        <h2 class="card-title">Chat Aly 🤖</h2>
+        <h2 class="card-title">Neon Code Cafe ☕</h2>
         <p class="card-text">
-          Assistente virtual em forma de chat interativo, que combina mensagens, chamadas e até histórias interativas com escolhas do usuário. Um projeto que une comunicação e entretenimento de forma criativa.
+          Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.
         </p>
 
         <div class="btn-group">
+<<<<<<< HEAD:src/views/Neon.vue
           <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-          <a href="https://github.com/AliceSilva56/Chat-Aly" target="_blank" class="btn btn-dark">Ver Repositório</a>
+=======
+          <a href="https://neon-code-cafe-1.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+          <a href="https://neon-code-cafe-1.vercel.app" target="_blank" class="btn btn-success">Baixar APK</a>
+>>>>>>> c5d54ef5c3a17a7ecd58757de640dce557fb50ff:src/views/projetos/Neon.vue
+          <a href="https://github.com/AliceSilva56/Neon-Code-Cafe" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
     </div>
@@ -62,6 +67,7 @@ export default {
   flex-wrap: wrap;
   gap: 32px;
   padding: 20px;
+  margin-bottom: 150px;
 }
 
 /* Imagem */

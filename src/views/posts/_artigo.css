@@ -1,0 +1,54 @@
+
+.artigo-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.voltar-btn {
+  background: none;
+  border: 1px solid #00cfff;
+  color: #00cfff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.voltar-btn:hover {
+  background: #00cfff;
+  color: #0d0d0d;
+  box-shadow: 0 0 10px #00cfff;
+}
+
+h1 {
+  color: #00cfff;
+  text-shadow: 0 0 10px #00cfff;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #000000;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+.conteudo p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.conteudo li {
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+code {
+  background: #111;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #39ff14;
+}

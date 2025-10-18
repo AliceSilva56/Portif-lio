@@ -11,6 +11,22 @@ export default {
     <!-- Nome / Marca -->
     <a class="navbar-brand">Portfólio - Alice P. da Silva</a>
 
+    
+     <!-- Botão hamburger para telas pequenas -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <!-- Aqui colocamos o ≡ para aparecer sempre -->
+      ≡
+    </button>
+
+    <!-- Links do menu -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
@@ -33,10 +49,7 @@ export default {
 
             <!-- Currículo -->
             <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="curriculo.pdf" download>
-                📄 Currículo
-                <button class="btn btn-sm btn-outline-primary ms-2">Baixar</button>
-              </a>
+              <router-link class="dropdown-item" to="/curriculo-view">📄 Currículo</router-link>
             </li>
 
             <!-- Certificados -->
@@ -56,22 +69,30 @@ export default {
 </nav>
 </template>
 
-
 <style scoped>
-
 * {
     font-family: cursive;
     scroll-behavior: smooth;
 }
+
 .navbar {
-    background: #111;
-    border-bottom: 1px solid #222;
-    box-shadow: 0 0 12px rgba(0, 207, 255, 0.2);
+    background: #f8f9fa; /* fundo claro */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .nav-link:hover, .navbar .nav-link:focus {
+.navbar .nav-link:hover, 
+.navbar .nav-link:focus {
     color: #00CFFF !important;
     text-shadow: 0 0 8px #00CFFF;
 }
 
+/* Personaliza o ícone hamburger para tema claro */
+.navbar-toggler {
+    border-color: #00CFFF;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
 </style>

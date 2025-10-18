@@ -15,7 +15,6 @@ export default {
             <strong>desenvolvimento de sistemas</strong>, <br>explorando novas tecnologias
             e criando projetos para evoluir minhas habilidades.
             <br>Estou animada para compartilhar meu progresso e aprender cada vez mais!
-
         </p>
         </div>
 
@@ -30,7 +29,7 @@ export default {
             </p>
             <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar" style="width: 75%">Progresso de Aprendizagem</div>
-        </div>
+            </div>
             </div>
         </div>
         </div>
@@ -40,7 +39,9 @@ export default {
 </template>
 
 <style scoped>
-
+/* ==========================
+   Estilos principais
+========================== */
 .progress {
   background: #c0c0c0ff;
   border-radius: 8px;
@@ -51,24 +52,21 @@ export default {
 .progress-bar {
   background: linear-gradient(90deg, #00CFFF, #39FF14);
   height: 100%;
-  max-width: 0; /* começa zerada */
+  max-width: 0;
   animation: loadBar 1.8s ease-out forwards;
 }
 
-/* anima o max-width até o valor do width inline */
 @keyframes loadBar {
   from { max-width: 0; }
   to   { max-width: 100%; }
 }
 
-
-
 .card-img-top {
-  width: 250px;   /* largura menor */
-  height: auto;   /* mantém proporção */
+  width: 250px;
+  height: auto;
   display: block;
-  margin: 0 auto 15px auto; /* centraliza e dá espaçamento embaixo */
-  border-radius: 9px; /* opcional: cantos arredondados */
+  margin: 0 auto 15px auto;
+  border-radius: 9px;
 }
 
 .card {
@@ -79,9 +77,8 @@ export default {
   width: 280px;
   box-shadow: 0 0 12px rgba(0, 207, 255, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: #181717ff; /* texto branco por padrão */
-    margin: 20px auto;
-    
+  color: #181717ff;
+  margin: 20px auto;
 }
 
 .card:hover {
@@ -120,18 +117,18 @@ export default {
 
 /* Container em duas colunas */
 .sobre-mim-container {
-  display: flex; /* usa flexbox para layout em linha */
-  justify-content: flex-start; /* encosta os elementos à esquerda */
-  align-items: center; /* alinha verticalmente ao centro */
-  gap: 20px;  /* espaço menor entre texto e imagem */
-  margin: 40px 0; /* margem superior e inferior */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
 }
 
 /* Texto à esquerda */
 .sobre-mim-texto {
-  flex: 1; /* ocupa o espaço restante */
-  color: #ffffffff; /* texto branco */
-  padding: 0 80px; /* espaçamento interno */
+  flex: 1;
+  color: #ffffffff;
+  padding: 0 80px;
 }
 
 .sobre-mim-texto h2 {
@@ -149,15 +146,61 @@ export default {
 
 /* Card reduzido à direita */
 .sobre-mim-card {
-  flex: 0 0 500px; /* largura fixa menor */
+  flex: 0 0 500px;
 }
 
-.card-img-top {
-  width: 250px;   /* largura menor */
-  height: auto;   /* mantém proporção */
-  display: block;
-  margin: 0 auto 15px auto; /* centraliza e dá espaçamento embaixo */
-  border-radius: 9px; /* opcional: cantos arredondados */
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+@media (max-width: 900px) {
+  .sobre-mim-container {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .sobre-mim-texto {
+    padding: 0;
+  }
+
+  .sobre-mim-texto h2 {
+    font-size: 1.7rem;
+  }
+
+  .sobre-mim-texto p {
+    font-size: 0.95rem;
+  }
+
+  .sobre-mim-card {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card-img-top {
+    width: 180px;
+  }
 }
 
+@media (max-width: 500px) {
+  .sobre-mim-texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre-mim-texto p {
+    font-size: 0.9rem;
+  }
+
+  .card-img-top {
+    width: 150px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+}
 </style>

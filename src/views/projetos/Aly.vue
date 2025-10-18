@@ -1,35 +1,41 @@
+
 <script>
 export default {
-  name: "Costura"
+  name: "Aly"
 }
 </script>
 
 <template>
-  <div class="costura-page">
+  <div class="aly-page">
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
-    <div class="costura-container">
-      <img src="@/assets/img/Costura.png" alt="Costura Certa" class="costura-img" />
+    <div class="aly-container">
+      <img src="@/assets/img/projetos/Aly.png" alt="Chat Aly" class="aly-img" />
 
-      <div class="card costura-card">
-        <h2 class="card-title">Costura Certa ✂️</h2>
+      <div class="card aly-card">
+        <h2 class="card-title">Chat Aly 🤖</h2>
         <p class="card-text">
-          Aplicativo em desenvolvimento voltado para gestão de pedidos de costura, permitindo cadastrar medidas, acompanhar pedidos e controlar parte financeira. Interface simples, organizada e com recursos de backup.
+          Assistente virtual em forma de chat interativo, que combina mensagens, chamadas e até histórias interativas com escolhas do usuário. Um projeto que une comunicação e entretenimento de forma criativa.
         </p>
 
         <div class="btn-group">
+<<<<<<< HEAD:src/views/Aly.vue
           <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-          <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
+          <a href="https://github.com/AliceSilva56/Chat-Aly" target="_blank" class="btn btn-dark">Ver Repositório</a>
+=======
+          <a href="https://chat-aly-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+          <a href="https://github.com/AliceSilva56/Chat-Aly/releases/tag/Chat-Aly" target="_blank" class="btn btn-success">Baixar APK</a>
+          <a href="https://github.com/AliceSilva56/chat-aly" target="_blank" class="btn btn-dark">Ver Repositório</a>
+>>>>>>> c5d54ef5c3a17a7ecd58757de640dce557fb50ff:src/views/projetos/Aly.vue
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -56,7 +62,7 @@ export default {
 }
 
 /* Layout principal */
-.costura-container {
+.aly-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -66,7 +72,7 @@ export default {
 }
 
 /* Imagem */
-.costura-img {
+.aly-img {
   width: 100%;
   max-width: 450px;
   height: auto;
@@ -75,13 +81,13 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.costura-img:hover {
+.aly-img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #39FF14, 0 0 40px rgba(57, 255, 20, 0.6);
 }
 
 /* Card */
-.costura-card {
+.aly-card {
   flex: 1;
   min-width: 300px;
   max-width: 600px;
@@ -92,7 +98,7 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.costura-card:hover {
+.aly-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 24px #00CFFF, 0 0 48px rgba(0, 207, 255, 0.4);
 }
@@ -123,16 +129,16 @@ export default {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .costura-container {
+  .aly-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .costura-card {
+  .aly-card {
     width: 90%;
   }
 
-  .costura-img {
+  .aly-img {
     max-width: 80%;
   }
 }
