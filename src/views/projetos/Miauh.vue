@@ -25,11 +25,9 @@ export default {
 
         <div class="btn-group">
           <a href="https://miauh-timer-web.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
-<<<<<<< HEAD:src/views/Miauh.vue
-          <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-=======
+
           <a href="https://github.com/AliceSilva56/Miauh-Timer-flutter/releases/tag/Miauh-Timer" target="_blank" class="btn btn-success">Baixar APK</a>
->>>>>>> c5d54ef5c3a17a7ecd58757de640dce557fb50ff:src/views/projetos/Miauh.vue
+
           <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>

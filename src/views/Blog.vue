@@ -36,7 +36,7 @@ const posts = ref([
     link: '/inicio-dev'
   },
   {
-    titulo: 'Dicas de produtividade com Vue.js',
+    titulo: 'Dicas de produtividade com Vue.js e Flutter',
     descricao: 'Pequenos truques que agilizam o dia a dia no front.',
     link: '/vue-dicas'
   }

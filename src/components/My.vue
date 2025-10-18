@@ -1,41 +1,83 @@
 <script>
+import { ref, onMounted } from 'vue'
+
 export default {
-  name: 'My'
+  name: 'My',
+  setup() {
+    const frases = [
+      '🚀 Explorando o universo do código e criando experiências incríveis.',
+      '💡 Criando soluções com criatividade e um toque de magia digital.',
+      '⚙️ Aprendendo e evoluindo todos os dias com cada linha de código.',
+      '🌈 Transformando ideias em interfaces e projetos que inspiram.'
+    ]
+    const fraseAtual = ref('')
+    let indexFrase = 0
+    let indexLetra = 0
+
+    const digitar = () => {
+      if (indexLetra < frases[indexFrase].length) {
+        fraseAtual.value += frases[indexFrase].charAt(indexLetra)
+        indexLetra++
+        setTimeout(digitar, 70)
+      } else {
+        setTimeout(apagar, 2000)
+      }
+    }
+
+    const apagar = () => {
+      if (indexLetra > 0) {
+        fraseAtual.value = frases[indexFrase].substring(0, indexLetra - 1)
+        indexLetra--
+        setTimeout(apagar, 35)
+      } else {
+        indexFrase = (indexFrase + 1) % frases.length
+        setTimeout(digitar, 500)
+      }
+    }
+
+    onMounted(() => {
+      digitar()
+    })
+
+    return { fraseAtual }
+  }
 }
 </script>
 
 <template>
-    <!-- Primeira Versão do card, com texto sobre mim -->
-    <div id="sobre-mim" class="sobre-mim-container">
-        <!-- Texto à esquerda -->
-        <div class="sobre-mim-texto">
-        <h2>Sobre Mim</h2>
-        <p>
-            Olá! Meu nome é Alice Pinheiro da Silva. <br>Estou iniciando minha jornada no 
-            <strong>desenvolvimento de sistemas</strong>, <br>explorando novas tecnologias
-            e criando projetos para evoluir minhas habilidades.
-            <br>Estou animada para compartilhar meu progresso e aprender cada vez mais!
-        </p>
-        </div>
-
-        <!-- Card à direita -->
-        <div class="sobre-mim-card">
-        <div class="card">
-            <img src="@/assets/img/Alice.png" class="card-img-top" alt="Guardião">
-            <div class="card-body">
-            <h5 class="card-title">Essa sou eu (;-)</h5>
-            <p class="card-text">
-                Este é um card reduzido, mostrando parte do meu progresso inicial.
-            </p>
-            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar" style="width: 75%">Progresso de Aprendizagem</div>
-            </div>
-            </div>
-        </div>
-        </div>
+  <div id="sobre-mim" class="sobre-mim-container">
+    <!-- Texto à esquerda -->
+    <div class="sobre-mim-texto">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá! Meu nome é <strong>Alice Pinheiro da Silva</strong>. <br>
+       Iniciei minha jornada no 
+        <strong>desenvolvimento de sistemas</strong> <br>
+        exatamente no dia 19/03/2024, desde então venho explorando novas tecnologias e criando projetos para evoluir minhas habilidades.
+        <br>Estou animada para compartilhar meu progresso e aprender cada vez mais!
+      </p>
     </div>
 
-<br>
+    <!-- Card animado à direita -->
+    <div class="sobre-mim-card">
+      <div class="card animado">
+        <div class="avatar-container">
+          <img src="@/assets/img/Alice.png" class="card-img-top flutuante" alt="Alice">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Essa sou eu (;-)</h5>
+          <p class="typewriter">{{ fraseAtual }}</p>
+
+          <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 25%">Progresso de Aprendizagem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
 </template>
 
 <style scoped>
@@ -61,16 +103,29 @@ export default {
   to   { max-width: 100%; }
 }
 
+/* Avatar circular com brilho */
 .card-img-top {
-  width: 250px;
+  width: 200px;
   height: auto;
   display: block;
   margin: 0 auto 15px auto;
-  border-radius: 9px;
+  border-radius: 50%;
+  border: 3px solid #00CFFF;
+  box-shadow: 0 0 15px #00CFFF;
+}
+
+/* Animação flutuante do avatar */
+.flutuante {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .card {
-  background: #ffffffff;
+  background: #ffffff;
   border: 1px solid #222;
   border-radius: 12px;
   padding: 20px;
@@ -93,29 +148,27 @@ export default {
   text-shadow: 0 0 8px #00CFFF;
 }
 
-.card-content {
+/* Texto digitado com quebra de linha */
+.typewriter {
   font-size: 0.95rem;
-  margin-bottom: 15px;
+  font-weight: 500;
+  color: #181717;
+  min-height: 48px; /* Mantém o espaço fixo */
+  overflow: hidden;
+  border-right: 2px solid #39FF14;
+  white-space: normal; /* Permite quebrar linha */
+  word-break: break-word;
+  animation: blink 0.8s infinite;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 8px;
 }
 
-.card-btn {
-  background: linear-gradient(90deg, #00CFFF, #39FF14);
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: #0d0d0d;
-  transition: 0.3s;
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
-.card-btn:hover {
-  filter: brightness(1.2);
-  box-shadow: 0 0 10px #00CFFF;
-}
-
-/* Container em duas colunas */
+/* Container principal */
 .sobre-mim-container {
   display: flex;
   justify-content: flex-start;
@@ -127,7 +180,7 @@ export default {
 /* Texto à esquerda */
 .sobre-mim-texto {
   flex: 1;
-  color: #ffffffff;
+  color: #000000;
   padding: 0 80px;
 }
 
@@ -144,13 +197,13 @@ export default {
   color: #000000ff;
 }
 
-/* Card reduzido à direita */
+/* Card à direita */
 .sobre-mim-card {
   flex: 0 0 500px;
 }
 
 /* ==========================
-   RESPONSIVIDADE
+   Responsividade
 ========================== */
 @media (max-width: 900px) {
   .sobre-mim-container {
@@ -163,44 +216,16 @@ export default {
     padding: 0;
   }
 
-  .sobre-mim-texto h2 {
-    font-size: 1.7rem;
-  }
-
-  .sobre-mim-texto p {
-    font-size: 0.95rem;
-  }
-
-  .sobre-mim-card {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
   .card {
     width: 90%;
-    padding: 15px;
-  }
-
-  .card-img-top {
-    width: 180px;
-  }
-}
-
-@media (max-width: 500px) {
-  .sobre-mim-texto h2 {
-    font-size: 1.5rem;
-  }
-
-  .sobre-mim-texto p {
-    font-size: 0.9rem;
   }
 
   .card-img-top {
     width: 150px;
   }
 
-  .card {
-    padding: 12px;
+  .typewriter {
+    font-size: 0.9rem;
   }
 }
 </style>

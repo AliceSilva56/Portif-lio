@@ -23,13 +23,9 @@ export default {
         </p>
 
         <div class="btn-group">
-<<<<<<< HEAD:src/views/Neon.vue
-          <a href="https://miauh-demo.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
-          <a href="https://miauh-apk-link.com" target="_blank" class="btn btn-success">Baixar APK</a>
-=======
+
           <a href="https://neon-code-cafe-1.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://neon-code-cafe-1.vercel.app" target="_blank" class="btn btn-success">Baixar APK</a>
->>>>>>> c5d54ef5c3a17a7ecd58757de640dce557fb50ff:src/views/projetos/Neon.vue
           <a href="https://github.com/AliceSilva56/Neon-Code-Cafe" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
