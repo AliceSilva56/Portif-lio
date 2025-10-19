@@ -9,7 +9,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
@@ -17,10 +17,15 @@ export default {
       <img src="@/assets/img/projetos/Neon.png" alt="Neon Code Café" class="aly-img" />
 
       <div class="card aly-card">
-        <h2 class="card-title">Neon Code Cafe ☕</h2>
-        <p class="card-text">
-          Website institucional com tema futurista, apresentando um cardápio criativo inspirado no mundo da programação. Layout neon, responsivo e envolvente, com elementos visuais modernos e imersivos.
-        </p>
+         <div class="projeto-descricao">
+    <h2>☕ Néon Code Café</h2>
+    <p>
+      🌌 <strong>Néon Code Café</strong> é o ponto de encontro entre café, criatividade e código.<br><br>
+      Um espaço virtual onde a estética neon se mistura com a energia da programação, criando uma atmosfera inspiradora e envolvente.<br><br>
+      Cada elemento foi pensado para transmitir vibração, inovação e personalidade — como um café digital onde ideias ganham vida sob luzes coloridas.<br><br>
+      O projeto é um tributo ao poder da criação, ao prazer de codar e à beleza de ver o mundo em cores diferentes.
+    </p>
+  </div>
 
         <div class="btn-group">
 
@@ -34,6 +39,30 @@ export default {
 </template>
 
 <style scoped>
+
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }

@@ -10,7 +10,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
@@ -18,10 +18,15 @@ export default {
       <img src="@/assets/img/projetos/Aly.png" alt="Chat Aly" class="aly-img" />
 
       <div class="card aly-card">
-        <h2 class="card-title">Chat Aly 🤖</h2>
-        <p class="card-text">
-          Assistente virtual em forma de chat interativo, que combina mensagens, chamadas e até histórias interativas com escolhas do usuário. Um projeto que une comunicação e entretenimento de forma criativa.
-        </p>
+        <div class="projeto-descricao">
+    <h2>🗨️ Chat Aly</h2>
+    <p>
+      💬 <strong>Chat Aly</strong> nasceu da vontade de dar vida à tecnologia — de criar uma conversa que fosse mais do que respostas automáticas, mas uma troca leve, divertida e inteligente.<br><br>
+      Ele é como aquele amigo digital que te entende, te acompanha e até te surpreende com respostas cheias de personalidade.<br><br>
+      Feito para demonstrar o poder da interação entre design e empatia, o Chat Aly mostra que tecnologia e emoção podem caminhar lado a lado.<br><br>
+      É um projeto que reflete não só conhecimento técnico, mas também sensibilidade: um toque humano em meio a linhas de código.
+    </p>
+  </div>
 
         <div class="btn-group">
           <a href="https://chat-aly-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
@@ -35,6 +40,29 @@ export default {
 </template>
 
 <style scoped>
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }

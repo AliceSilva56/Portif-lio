@@ -9,7 +9,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
@@ -17,10 +17,15 @@ export default {
       <img src="@/assets/img/projetos/Guardiao.png" alt="Guardião de senhas" class="guardiao-img" />
 
       <div class="card guardiao-card">
-        <h2 class="card-title">Guardião de Senhas 🔐</h2>
-        <p class="card-text">
-         Aplicativo focado em armazenamento seguro de senhas. Permite organizar credenciais em pastas, proteger dados com criptografia e biometria, além de oferecer interface moderna no estilo Dark Tech. O app é totalmente em português e prioriza a segurança local sem depender de servidores externos.
-        </p>
+        <div class="projeto-descricao">
+    <h2>🔐 Guardião de Senhas</h2>
+    <p>
+      🧠 <strong>Guardião de Senhas</strong> é aquele amigo confiável que nunca esquece nada — mas guarda tudo com segurança.<br><br>
+      Feito para proteger o que há de mais valioso no seu mundo digital, ele combina praticidade, design moderno e foco total em privacidade.<br><br>
+      É um lembrete de que segurança também pode ser simples e bonita.<br><br>
+      Com o Guardião de Senhas, você tem tranquilidade para focar no que importa, sabendo que seus segredos estão em boas mãos.
+    </p>
+  </div>
         <div class="btn-group">
           <a href="https://guardi-o-de-senhas-web.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online(Web)</a>
           <a href="https://github.com/AliceSilva56/Guardi-o-de-Senhas/releases/tag/Guardião-de-Senhas" target="_blank" class="btn btn-success">Baixar APK</a>
@@ -32,6 +37,29 @@ export default {
 </template>
 
 <style scoped>
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }

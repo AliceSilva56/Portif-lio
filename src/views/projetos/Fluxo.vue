@@ -9,7 +9,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
@@ -17,10 +17,15 @@ export default {
       <img src="@/assets/img/projetos/Fluxo.png" alt="FluxoApp" class="fluxo-img" />
 
       <div class="card fluxo-card">
-        <h2 class="card-title">FluxoApp 🚀</h2>
-        <p class="card-text">
-          Aplicativo de controle financeiro pessoal, com registro de gastos, gráficos dinâmicos, resumo de períodos e exportação em PDF. Focado em ajudar o usuário a equilibrar finanças de forma prática e visual.
-        </p>
+        <div class="projeto-descricao">
+    <h2>💸 FluxoApp</h2>
+    <p>
+      💰 <strong>FluxoApp</strong> é o espaço onde controle e liberdade se encontram.<br><br>
+      Criado para quem quer entender o próprio dinheiro sem perder a leveza do dia a dia, ele mostra que cuidar das finanças pode ser simples, bonito e até inspirador.<br><br>
+      Aqui, cada detalhe — dos gráficos ao design — foi pensado para te ajudar a visualizar seu progresso e celebrar suas conquistas.<br><br>
+      O FluxoApp não é só sobre números, mas sobre histórias: a de cada meta alcançada, cada sonho realizado e cada novo começo financeiro.
+    </p>
+  </div>
 
         <div class="btn-group">
           <a href="https://fluxo-app-web-42dm.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
@@ -34,6 +39,29 @@ export default {
 </template>
 
 <style scoped>
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }

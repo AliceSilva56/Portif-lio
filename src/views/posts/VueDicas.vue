@@ -2,7 +2,7 @@
   <div class="artigo-container">
     <button class="voltar-btn" @click="$router.push('/blog')">⬅ Voltar</button>
 
-    <h1>💡 Dicas de Produtividade com Vue.js</h1>
+    <h1>💡 Dicas de Produtividade com Vue.js e Flutter</h1>
     <p class="sub">Publicado em 16 de Outubro de 2025</p>
 
     <div class="conteudo">
@@ -33,19 +33,27 @@
       <p>
         Mas aí veio o <strong>Flutter</strong>… e tudo mudou 😅.  
         Foi como sair do 2D pro 3D: a mesma lógica de componentes,  
-        mas agora com interfaces que ganham vida — animações, sombras, e o poder de rodar em qualquer tela.
+        mas agora com interfaces que ganham vida — animações, sombras,  
+        e o poder de rodar em qualquer tela: Android, iOS, Web e até Desktop.
       </p>
 
       <p>
-        Hoje, costumo brincar que o Vue me ensinou a ser organizada,  
-        e o Flutter me ensinou a ser ousada.  
+        No Flutter, widgets são como os componentes do Vue, mas com esteroides.  
+        Você pode animar qualquer coisa, personalizar transições,  
+        e até controlar o design pixel a pixel — tudo isso com performance absurda.
+      </p>
+
+      <p>
+        Hoje, costumo brincar que o Vue me ensinou a ser <strong>organizada</strong>,  
+        e o Flutter me ensinou a ser <strong>ousada</strong>.  
         Um constrói a base, o outro deixa tudo brilhar. ✨  
       </p>
 
       <p class="final">
         Se você ama Vue, experimente Flutter.  
         E se ama Flutter, aprenda com o Vue.  
-        Juntos, eles formam o equilíbrio perfeito entre <strong>estrutura e criatividade</strong>. 🚀
+        Juntos, eles formam o equilíbrio perfeito entre  
+        <strong>estrutura e criatividade</strong>. 🚀
       </p>
     </div>
   </div>
@@ -81,6 +89,7 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
+  white-space: pre-line;
 }
 
 .conteudo p {
@@ -88,11 +97,11 @@ h1 {
 }
 
 .conteudo strong {
-  color: #42b883; /* cor do Vue */
+  color: #42b883; /* Vue */
 }
 
 .final strong {
-  color: #0077ff; /* cor do Flutter */
+  color: #0077ff; /* Flutter */
 }
 
 .final {
@@ -117,7 +126,6 @@ h1 {
   background-color: #2fa36b;
 }
 
-/* Estilo pro código */
 code {
   background: #0e0e0e;
   color: #39ff14;

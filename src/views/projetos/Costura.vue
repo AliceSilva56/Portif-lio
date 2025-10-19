@@ -9,7 +9,7 @@ export default {
 
     <!-- Botão voltar -->
     <div class="voltar-container">
-      <router-link to="/card" class="btn-voltar">⬅ Voltar</router-link>
+      <router-link to="/" class="btn-voltar">⬅ Voltar</router-link>
     </div>
 
     <!-- Conteúdo -->
@@ -17,11 +17,16 @@ export default {
       <img src="@/assets/img/projetos/Costura.png" alt="Costura Certa" class="costura-img" />
 
       <div class="card costura-card">
-        <h2 class="card-title">Costura Certa ✂️</h2>
-        <p class="card-text">
-          Aplicativo em desenvolvimento voltado para gestão de pedidos de costura, permitindo cadastrar medidas, acompanhar pedidos e controlar parte financeira. Interface simples, organizada e com recursos de backup.
-        </p>
-
+        <div class="projeto-descricao">
+    <h2>✂️ Costura Certa</h2>
+    <p>
+      🧵 <strong>Costura Certa</strong> foi criado para quem transforma tecidos em sonhos.<br><br>
+      Mais do que um sistema, ele é um ateliê digital que organiza ideias, pedidos e inspirações.<br><br>
+      Cada detalhe do app foi pensado para trazer praticidade, beleza e cuidado — como os pontos firmes de uma costura bem feita.<br><br>
+      Ele traduz a essência de quem vive da arte manual, mas deseja a eficiência do digital.<br><br>
+      Com o Costura Certa, cada peça ganha não só forma, mas também propósito.
+    </p>
+  </div>
         <div class="btn-group">
           <a href="https://costura-certa-web.vercel.app/" target="_blank" class="btn btn-primary">Ver Demo Online</a>
           <a href="https://github.com/AliceSilva56/Costura-Certa/releases/tag/Costura-Certa" target="_blank" class="btn btn-success">Baixar APK</a>
@@ -34,6 +39,29 @@ export default {
 </template>
 
 <style scoped>
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }

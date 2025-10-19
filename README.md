@@ -32,37 +32,40 @@ src/
 │ ├─ img/
 │ └─ css/
 │ ├─ main.css
-│ └─ animations.css
 ├─ components/
-│ ├─ Card.vue
-│ ├─ My.vue
-│ ├─ NavBar.vue
-│ ├─ Rodape.vue
-│ ├─ Timeline.vue
-│ └─ TypeWriter.vue
-│ └─ TelaBoot.vue
+│  ├─ Card.vue → Mostra seus projetos com descrição e botão “Ver Mais”.
+│  ├─ My.vue → Card pessoal com texto sobre você e seu início na programação.
+│  ├─ NavBar.vue → Navegação principal com Home, Contatos e Dropdown (Currículo, Certificados, Blog).
+│  ├─ Rodape.vue → Rodapé com informações de contato e links.
+│  ├─ Timeline.vue → Linha do tempo do seu aprendizado e evolução.
+│  ├─ TypeWriter.vue → Efeito de digitação dinâmica, dá um toque moderno.
+│  └─ TelaBoot.vue → Tela inicial animada com botão pra entrar no portfólio (ótima intro futurista).
+│
 ├─ router/
 │ └─ index.js
 ├─ views/
-│ ├─ projetos/
-│ │ ├─ Aly.vue
-│ │ ├─ Costura.vue
-│ │ ├─ Fluxo.vue
-│ │ ├─ Guardiao.vue
-│ │ ├─ Miauh.vue
-│ │ └─ Neon.vue
-│ ├─ posts/
-│ │ ├─ InicioDev.vue
-│ │ ├─ VueDicas.vue
-│ │ ├─ FlutterBasico.vue
-│ │ ├─ FlutterDarckTech.vue
-│ │ └─ _artigo.css
-│ ├─ Blog.vue
-│ ├─ Certificado.vue
-│ ├─ Contatos.vue
-│ ├─ CurriculoView.vue
-│ └─ Home.vue
-└─ App.vue
+│  ├─ projetos/
+│  │  ├─ Aly.vue → Chat inteligente (Chat Aly).
+│  │  ├─ Costura.vue → Sistema de gestão para costureiras (Costura Certa).
+│  │  ├─ Fluxo.vue → App financeiro simples e funcional (FluxoApp).
+│  │  ├─ Guardiao.vue → App de senhas com cofre seguro (Guardião de Senhas).
+│  │  ├─ Miauh.vue → Jogo da memória com tema de gatos (Miauh Timer).
+│  │  └─ Neon.vue → App futurista (possivelmente um template ou experimento visual Neon Code Café).
+│
+│  ├─ posts/
+│  │  ├─ InicioDev.vue → História pessoal e jornada de aprendizado.
+│  │  ├─ VueDicas.vue → Dicas de produtividade com Vue + Flutter.
+│  │  ├─ FlutterBasico.vue → Introdução criativa e inspiradora sobre Flutter.
+│  │  ├─ FlutterDarkTech.vue → Visual futurista (Dark Tech) e estilo de design.
+│  │  └─ _artigo.css → CSS padrão para os artigos (layout, cores e tipografia unificada).
+│
+│  ├─ Blog.vue → Página com listagem de artigos/posts.
+│  ├─ Certificado.vue → Galeria de certificados.
+│  ├─ Contatos.vue → Página de contato (redes, e-mail etc).
+│  ├─ CurriculoView.vue → Exibição estilizada do currículo.
+│  └─ Home.vue → Tela inicial com resumo dos projetos e apresentação.
+│
+└─ App.vue → Estrutura principal do app (ponto de entrada Vue).
 ```
 ─────────────────────────────────────────────
 
