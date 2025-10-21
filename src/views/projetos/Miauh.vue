@@ -17,15 +17,21 @@ export default {
       <img src="@/assets/img/projetos/Miauh.png" alt="Miauh Timer" class="aly-img" />
 
       <div class="card aly-card">
-        <h2 class="card-title">Miauh Timer 🐾</h2>
-        <p class="card-text">
-          Aplicativo temático inspirado em gatos, desenvolvido para cálculo de diferença de tempo entre duas datas/horas.<br>
-          Traz uma experiência divertida e funcional, com identidade visual personalizada.
-        </p>
+        <div class="projeto-descricao">
+    <h2>🐱 Miauh Timer</h2>
+    <p>
+      ⏱️ <strong>Miauh Timer</strong> é o timer que entende o seu tempo — e o respeita.<br><br>
+      Inspirado na calma e elegância dos gatos, ele foi criado para te ajudar a equilibrar foco e descanso, sem perder o ritmo.<br><br>
+      Ideal para estudos, trabalho ou autocuidado, o Miauh Timer transforma o ato de gerenciar tempo em algo leve, fofo e funcional.<br><br>
+      Mais que um cronômetro, é um lembrete gentil de que produtividade também pode ter aconchego e carinho.
+    </p>
+  </div>
 
         <div class="btn-group">
           <a href="https://miauh-timer-web.vercel.app" target="_blank" class="btn btn-primary">Ver Demo Online</a>
+
           <a href="https://github.com/AliceSilva56/Miauh-Timer-flutter/releases/tag/Miauh-Timer" target="_blank" class="btn btn-success">Baixar APK</a>
+
           <a href="https://github.com/AliceSilva56/miauh-timer" target="_blank" class="btn btn-dark">Ver Repositório</a>
         </div>
       </div>
@@ -34,6 +40,29 @@ export default {
 </template>
 
 <style scoped>
+.projeto-descricao {
+  color: #ffffff;
+  padding: 1rem;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.projeto-descricao h2 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao p {
+  color: #ffffff;
+  margin: 0.25rem 0;
+  white-space: pre-wrap;
+}
+
+/* Pequenas melhorias visuais para cards escuros */
+.projeto-descricao strong {
+  font-weight: 700;
+}
 .voltar-container {
   margin: 20px 0 10px 20px;
 }
