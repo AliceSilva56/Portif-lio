@@ -24,7 +24,7 @@ export default {
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar" style="width: 100%"></div>
       </div>
-      <p class="card-text"><small class="text-body-secondary">Ultima Atualização 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização  Mar 1, 2025</small></p>
     </div>
   </div>
 
@@ -42,7 +42,7 @@ export default {
   <div class="progress-bar" style="width: 100%"></div>
 
 </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização Apr 8, 2025</small></p>
     </div>
   </div>
   <div class="card">
@@ -58,7 +58,7 @@ export default {
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 100%"></div>
 </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização Sep 29, 2025</small></p>
     </div>
   </div>
 </div>
@@ -77,7 +77,7 @@ export default {
         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 75%"></div>
     </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização Oct 10, 2025</small></p>
     </div>
   </div>
 
@@ -93,7 +93,7 @@ export default {
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
   <div class="progress-bar" style="width: 100%"></div>
 </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização Jul 29, 2025</small></p>
     </div>
   </div>
   <div class="card">
@@ -109,7 +109,7 @@ export default {
       <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar" style="width: 10%"></div>
       </div>
-      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-body-secondary">Ultima Atualização Oct 13, 2025</small></p>
     </div>
   </div>
 </div>
