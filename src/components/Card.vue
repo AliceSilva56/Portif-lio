@@ -99,6 +99,7 @@ export default {
 </div>
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
+    </div>
 
     <!-- Costura Certa (🚧 em progresso) -->
     <div class="card">
